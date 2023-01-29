@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * This is the module for executing stored actions.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function location_theme() {
+  return [
+    'location' => [
+      'variables' => [
+        'data' => [],
+      ],
+    ],
+  ];
+}
