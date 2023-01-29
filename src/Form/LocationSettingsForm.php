@@ -11,21 +11,21 @@ use Drupal\Core\Cache\Cache;
  */
 class LocationSettingsForm extends ConfigFormBase {
 
-  /** 
+  /**
    * Config settings.
    *
    * @var string
    */
   const SETTINGS = 'location.settings';
 
-  /** 
+  /**
    * {@inheritdoc}
    */
   public function getFormId() {
     return 'location_admin_settings';
   }
 
-  /** 
+  /**
    * {@inheritdoc}
    */
   protected function getEditableConfigNames() {
@@ -34,7 +34,7 @@ class LocationSettingsForm extends ConfigFormBase {
     ];
   }
 
-  /** 
+  /**
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
@@ -44,7 +44,7 @@ class LocationSettingsForm extends ConfigFormBase {
       '#type' => 'textfield',
       '#title' => $this->t('City'),
       '#default_value' => $config->get('city') ?: 'New York, NY',
-    ];  
+    ];
 
     $form['country'] = [
       '#type' => 'textfield',
@@ -77,7 +77,7 @@ class LocationSettingsForm extends ConfigFormBase {
     return parent::buildForm($form, $form_state);
   }
 
-  /** 
+  /**
    * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
