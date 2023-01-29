@@ -1,0 +1,4 @@
+services:
+  location.time:
+    class: Drupal\location\TimeService
+    arguments: ['@config.factory', '@date.formatter']
