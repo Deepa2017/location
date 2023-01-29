@@ -1,0 +1,7 @@
+location.location_settings:
+  path: '/admin/config/regional/location'
+  defaults:
+    _form: '\Drupal\location\Form\LocationSettingsForm'
+    _title: 'Location Settings Form'
+  requirements:
+    _role: 'administrator'

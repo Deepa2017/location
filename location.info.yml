@@ -1,0 +1,5 @@
+name: Location
+type: module
+description: 'Used to set location settings including City, Conutry and Current timezone '
+package: Custom
+core_version_requirement: ^8.8.0 || ^9.0

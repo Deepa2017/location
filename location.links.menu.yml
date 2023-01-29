@@ -1,0 +1,6 @@
+location.location_settings:
+  title: Location Settings
+  description: 'Configure location for the site.'
+  route_name: location.location_settings
+  parent: system.admin_config_regional
+  weight: 10
